@@ -159,36 +159,46 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SafeArea(
         child: Scaffold(
-          body: Center(
-            child: Container(
-              height: 360,
-              width: 360,
-              decoration:
-                  BoxDecoration(color: Colors.orange, shape: BoxShape.circle),
-              alignment: Alignment.center,
+          backgroundColor: Colors.white,
+          bottomNavigationBar: BottomAppBar(
+            color: Color(0xffFF9800),
+            child: Center(
+              child: Text(
+                'Emoji',
+                style: TextStyle(color: Colors.white, fontSize: 30),
+              ),
+            ),
+          ),
+          body: Align(
+            child: Center(
               child: Container(
-                height: 380,
-                width: 280,
-                decoration:
-                    BoxDecoration(color: Colors.white, shape: BoxShape.circle),
-                alignment: Alignment.topCenter,
+                height: 360,
+                width: 360,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  color: Color(0xffFF9800),
+                  shape: BoxShape.circle,
+                ),
                 child: Container(
-                  height: 290,
-                  width: 280,
+                  height: 260,
+                  width: 260,
+                  alignment: Alignment(-0.65,-0.50),
                   decoration: BoxDecoration(
-                      color: Colors.orange, shape: BoxShape.circle),
-                  alignment: Alignment.centerRight,
+                    color: Colors.orange,
+                    shape: BoxShape.circle,
+                    border: Border(bottom: BorderSide(color: Colors.white,width: 20))
+                  ),
                   child: Container(
-                    height: 50,
-                    width: 50,
+                    height: 78,
+                    width: 78,
+                    alignment: Alignment(75,0),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       shape: BoxShape.circle,
                     ),
-                    alignment: Alignment.centerLeft,
                     child: Container(
-                      height: 40,
-                      width: 40,
+                      height: 76,
+                      width: 75,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         shape: BoxShape.circle,
@@ -196,7 +206,6 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                 ),
-
               ),
             ),
           ),
